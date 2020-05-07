@@ -1,0 +1,51 @@
+﻿@model TestProject.Models.Students
+@{
+    ViewData["Title"] = "github.com/Herbert-sv";
+}
+
+
+<h3 class="text-primary">Student Display information</h3>
+
+<br />
+<div class="container">
+    <div class="col-md-6">
+
+       <div class="form-group">
+            <h4>Student Id</h4>
+            <p>@Model.StudentId</p>
+        </div>
+        <div class="form-group">
+            <h4>First Name</h4>
+            <p>@Model.FirstName</p>
+        </div>
+        <div class="form-group">
+            <h4>Last Name</h4>
+            <p>@Model.LastName</p>
+        </div>
+        <div class="form-group">
+            <h4>Career</h4>
+            <p>@Model.Career</p>
+        </div>
+        <div class="form-group">
+            <h4>Institution</h4>
+            <p>@Model.Institution</p>
+        </div>
+        <div class="form-group">
+            <h4>Yearly Cost</h4>
+            <p>@Model.YearlyCost</p>
+        </div>
+
+    </div>
+</div>
+
+<br />
+<div class="container-fluid">
+    <div class="well">Clone a Repository</div>
+    <p>
+        Repositories on GitHub exist as remote repositories. You can clone public repositories owned by other people.
+        You can clone your own repository to create a local copy on your computer and sync between the two locations.
+
+    </p>
+</div>
+
+

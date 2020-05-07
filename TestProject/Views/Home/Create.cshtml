@@ -1,0 +1,61 @@
+﻿@model TestProject.Models.Students
+@{
+    ViewData["Title"] = "github.com/Herbert-sv";
+}
+
+
+<h3 class="text-primary"> Create your information Details </h3>
+<hr />
+<div class="form-horizontal">
+    <form asp-action="Create" asp-controller="Home" method="post">
+        <div class="form-group">
+            <label for="StudentId">Student Id</label>
+            <br />
+            <div class="col-md-6"><input type="number" name="StudentId" class="form-control " /></div>
+        </div>
+        <div class="form-group">
+            <label for="FirstName">First Name</label>
+            <br />
+            <div class="col-md-6">
+                <input type="text" name="FirstName" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="LastName">Last Name</label>
+            <br />
+            <div class="col-md-6"><input type="text" name="LastName" class="form-control"></div>
+        </div>
+        <div class="form-group">
+            <label for="Career">Career</label>
+            <br />
+            <div class="col-md-6"><input type="text" name="Career" class="form-control" /></div>
+        </div>
+        <div class="form-group">
+            <label for="Institution">Institution</label>
+            <br />
+            <div class="col-md-6"><input type="text" name="Institution" class="form-control" /></div>
+        </div>
+        <div class="form-group">
+            <label for="YearlyCost">Yearly Cost</label>
+            <br />
+            <div class="col-md-6"><input type="number" name="YearlyCost" class="form-control" /></div>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Create</button>
+
+        </div>
+    </form>
+    <button class="btn btn-block btn-danger" id="Cform" >Clear form</button>/>
+</div>
+
+
+
+<script>
+    $('#Cform').click(function () {
+        $('input:text').val("","");
+
+    });
+    //});
+
+
+</script>
