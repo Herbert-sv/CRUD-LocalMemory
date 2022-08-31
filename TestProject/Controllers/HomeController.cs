@@ -19,11 +19,17 @@ namespace TestProject.Controllers
         Students student3 = new Students()
         { StudentId = 3, FirstName = "George", LastName = "Martin", Career = "Nursing", Institution = "Umass", YearlyCost = 45000 };
 
+        Students Student4 = new Students()
+        {
+          StudentId=4; FirstName="Camila", LastName="Hernandez", Career="Back-end Developer", Institution="Unknown",YearlyCost=55000
+        };
        public ActionResult Index()
         {
             StudentsInfo.Add(student1);
             StudentsInfo.Add(student2);
             StudentsInfo.Add(student3);
+            StudentsInfo.Add(Student4);
+             
             return View(StudentsInfo.ToList()) ;
         }
         public IActionResult Create()
